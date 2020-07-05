@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>Web Page Design</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel = "stylesheet" type = "text/css" href = "customstyling.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  
+<script>
+    function validate()
+    {
+     var name = document.forms["doc"]["fmail"].value; 
+     var pwd = document.forms["doc"]["fpwd"].value;
+     if(name == ""||pwd == "")
+     alert("hello");
+    return false;
+    }
+</script>
+    
+</head>
+<body class = "bg">
+    <form class = "form-container container-fluid" name = "doc" onsubmit = "return validate()">
+ <div class="form-group">
+    <label for="email">Email address:</label>
+    <input type="email" class="form-control" name = "fmail">
+  </div>
+  <div class="form-group">
+    <label for="pwd">Password:</label>
+    <input type="password" class="form-control" name = "fpwd">
+  </div>
+  <button type="submit" class="btn btn-primary btn-block">Submit</button>
+    </form>
+</body>
+</html>
